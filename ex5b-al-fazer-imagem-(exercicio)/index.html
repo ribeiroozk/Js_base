@@ -67,11 +67,34 @@
 
   <!-- Script JavaScript embutido na página -->
   <script>
+    // Selecione a imagem e os parágrafos pelo ID
+    const image = document.querySelector('#myImage');
+    const text = document.querySelector('#myText');
+    const subText = document.querySelector('#subText');
 
+    //Define as URLs das imagens
+    const imagemOriginal = 'image.png'
+    const imagemAlternativa = 'image2.png'
 
-    // 1ª Digitação (Resolva aqui o exercício)
+    // Adiciona um evento de "mouseover" (quando o mouse passa sobre a imagem)
+    image.addEventListener('mouseover', () => {
+      // Altera imagem para alternativa 
+      image.src = imagemAlternativa;
+      //Altera o texto principal
+      text.textContent = 'Imagem alterada!';
+      // Altera o texto adicional 
+      subText.textContent = 'Doja Cat - Little cat!';
+    }); 
 
-
+    // Adiciona um evento de "mouseout" (quando o mouse sai da imagem)
+    image.addEventListener('mouseout', () => {
+      // Volta a imagem original
+      image.src = imagemOriginal;
+      // Restaura o texto principal
+      text.textContent = 'Passe o mouse sobre a imagem'
+      // Restaura o trxto adicional 
+      subText.textContent = 'Sabrina Carpenter - Linda!';
+    });
   </script>
 </body>
 </html>
