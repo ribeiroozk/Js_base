@@ -37,7 +37,7 @@ if (!response.ok){
     
   } catch (error) {
     // Bloco catch: captura e trata erros que ocorreram no bloco try
-    userDataElement.innerHTML = <p style="color: red;">Erro: ${error.message}</p>; // Exibe a mensagem de erro
+    userDataElement.innerHTML = `<p style="color: red;">Erro: ${error.message}</p>;` // Exibe a mensagem de erro
     console.error(error); // Exibe o erro no console para debugging
   }
 });
