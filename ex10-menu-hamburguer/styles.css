@@ -65,7 +65,7 @@ nav {
     background-color: #333; 
     position: absolute; /* Posiciona a lista sobre o conteúdo*/
     top: 60px; /*Distância do topo */
-    left: 0; /Alinha a esquerda/
+    left: 0; /*Alinha a esquerda*/
   }
 
   .nav-list li {
