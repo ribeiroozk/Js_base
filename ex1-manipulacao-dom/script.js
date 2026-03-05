@@ -1,12 +1,11 @@
 // Seleciona o elemento do botão no DOM usando o ID "myButton" e armazena na variável 'button'
 
 // 3ª Digitação (Aqui) 
-const button = document.querySelector('#myButton');
-
+const button = document.querySelector("#myButton");
 // Seleciona o elemento de parágrafo no DOM usando o ID "myText" e armazena na variável 'text'
-const text = docuement.querySelector('#myText');
+const text = document.querySelector("#myButton");
 
 // Adiciona um "ouvinte" de evento ao botão. Quando o botão for clicado, a função dentro do 'addEventListener' será executada
-button.addEventListener('click', () => {
-    text.textContent = 'Olá Mundo!';
+button.addEventListener('click',() => {
+    text.textContent = 'Olá Mundo';
 });
